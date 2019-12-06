@@ -20,4 +20,9 @@ function tabCompo(data){
 
 }
 
-
+axios.then(response)=>{
+    const tabs = document.querySelector('.topics')
+    response.data.topics.forEach(tabby => {
+        newTab.appendChild(tabCompo(tabby))
+    })
+}
