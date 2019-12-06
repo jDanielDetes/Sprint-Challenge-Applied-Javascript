@@ -11,5 +11,13 @@
 const info = axios.get('https://lambda-times-backend.herokuapp.com/topics')
 console.log(info)
 
+function tabCompo(data){
+    const newTab = document.createElement('div')
+
+    newTab.classList.add('tab')
+    newTab.textContent= data
+    return newTab
+
+}
 
 
